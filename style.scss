@@ -228,8 +228,11 @@ nav {
   > .card-icon {
     display: inline;
     font-size: 1.5rem;
-    padding: 0.4rem 0.9rem;
-    width: min-content;
+    height: 3rem;
+    width: 3rem;
+    display: grid;
+    place-items: center;
+    border-radius: 0.5rem;
   }
 }
 
