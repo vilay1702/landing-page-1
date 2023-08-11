@@ -300,6 +300,9 @@ nav {
   margin: 0 auto;
   margin-bottom: 3rem;
 }
+.faq-section .customer-reviews {
+  display: flex;
+}
 .faq-section .customer-review-card {
   position: relative;
   padding: 3rem;
@@ -307,6 +310,10 @@ nav {
   display: flex;
   border-radius: 1rem;
   align-items: center;
+  transition: all 500ms ease-in-out;
+  overflow: hidden !important;
+  width: 100%;
+  opacity: 100%;
 }
 .faq-section .customer-review-card .faq-spacer {
   width: 5rem;
@@ -329,6 +336,10 @@ nav {
   color: rgba(0, 0, 0, 0.8);
   margin-top: 2.25rem;
   margin-bottom: 1rem;
+}
+.faq-section .customer-review-card-transition {
+  opacity: 0%;
+  display: none;
 }
 .faq-section .review-carousal-btns {
   position: absolute;
@@ -425,6 +436,7 @@ footer {
   margin-right: 1rem;
   font-size: 1.6rem;
   color: #134440;
+  cursor: pointer;
 }
 .footer-content .footer-nav {
   display: flex;
@@ -439,6 +451,7 @@ footer {
 .footer-content .footer-nav .footer-nav-item > p {
   color: #757575;
   font-size: 0.9rem;
+  cursor: pointer;
 }
 .footer-content .footer-nav .footer-nav-item > h4 {
   font-size: 1.25rem;

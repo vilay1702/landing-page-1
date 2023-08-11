@@ -338,6 +338,10 @@ nav {
     margin-bottom: 3rem;
   }
 
+  .customer-reviews {
+    display: flex;
+  }
+
   .customer-review-card {
     position: relative;
     padding: 3rem;
@@ -345,6 +349,10 @@ nav {
     display: flex;
     border-radius: 1rem;
     align-items: center;
+    transition: all 500ms ease-in-out;
+    overflow: hidden !important;
+    width: 100%;
+    opacity: 100%;
 
     .faq-spacer {
       width: 5rem;
@@ -371,6 +379,12 @@ nav {
       }
     }
   }
+
+  .customer-review-card-transition {
+    opacity: 0%;
+    display: none;
+  }
+
   .review-carousal-btns {
     position: absolute;
     right: 2rem;
@@ -483,6 +497,7 @@ footer {
         margin-right: 1rem;
         font-size: 1.6rem;
         color: $color-green-2;
+        cursor: pointer;
       }
     }
   }
@@ -500,6 +515,7 @@ footer {
       > p {
         color: $color-grey-2;
         font-size: 0.9rem;
+        cursor: pointer;
       }
 
       > h4 {
